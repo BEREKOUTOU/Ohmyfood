@@ -625,7 +625,7 @@ Body {
   cursor: pointer;
 }
 
-.footer {
+footer {
   width: 100%;
   height: 114px;
   display: flex;
@@ -636,7 +636,7 @@ Body {
   background-color: #353535;
 }
 @media screen and (max-width: 767.98px) {
-  .footer {
+  footer {
     width: 100%;
     height: auto;
     display: flex;
@@ -645,7 +645,7 @@ Body {
     margin: 0;
   }
 }
-.footer ul {
+footer ul {
   display: flex;
   list-style: none;
   color: white;
@@ -653,10 +653,10 @@ Body {
   align-items: center;
   padding: 0;
   margin: 0;
-  width: 70%;
+  width: 60%;
 }
 @media screen and (max-width: 767.98px) {
-  .footer ul {
+  footer ul {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -664,46 +664,49 @@ Body {
     margin-bottom: 20px;
   }
 }
-.footer ul li {
+footer ul li {
   padding: 0 10px;
   margin: 0;
-  width: 60%;
-  align-items: center;
-  justify-content: center;
+}
+footer ul li i {
+  padding: 0 10px;
 }
 @media screen and (max-width: 767.98px) {
-  .footer ul li {
+  footer ul li {
     width: 100%;
     flex-direction: column;
     padding-bottom: 10px;
   }
+  footer ul li i {
+    padding-right: 10px;
+    padding-left: 0px;
+  }
 }
-.footer ul li i {
-  padding-right: 10px;
-}
-.footer ul a {
+footer a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: white;
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 20%;
 }
 @media screen and (max-width: 767.98px) {
-  .footer ul a {
+  footer a {
     width: 100%;
-    padding-left: 10px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    justify-content: left;
   }
 }
-.footer .ohmyfood {
+footer .ohmyfood {
   color: white;
   font-family: "Shrikhand", cursive;
   font-size: 18px;
   font-weight: 400;
 }
 @media screen and (max-width: 767.98px) {
-  .footer .ohmyfood {
+  footer .ohmyfood {
     width: 100%;
     display: flex;
     flex-direction: column;

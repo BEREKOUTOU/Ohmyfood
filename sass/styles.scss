@@ -472,32 +472,40 @@ $color-quaternary: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
           
         }
 
-        li{ 
+      li{ 
+         padding: 0 10px;
+         margin: 0;
+         & i{
           padding: 0 10px;
-          margin: 0;
+         }
+        @media screen and (max-width: 767.98px){
           width: 100%;
-          @media screen and (max-width: 767.98px){
-            width: 100%;
-            flex-direction: column;
-            padding-bottom: 10px;
-          }
+          flex-direction: column;
+          padding-bottom: 10px;
+          
           i{
-              padding-right: 10px;
-          }
+              padding-right: 10px; 
+              padding-left: 0px;
+           } 
         }
-        a{
-          display: flex;
-          align-items: center;
-          text-decoration: none;
-          color: white;
-          padding: 0;
-          margin: 0;
-          width: 100%;
-          @media screen and (max-width: 767.98px){
-            width: 100%;
-            padding-left: 10px;
-          } 
-        }
+      }
+        
+    }
+    a{
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      padding: 0 ;
+      margin: 0;
+     width: 20%;
+      @media screen and (max-width: 767.98px){
+        width: 100%;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        justify-content: left;  
+
+      } 
     }
     .ohmyfood{
         color: white;

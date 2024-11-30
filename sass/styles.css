@@ -470,7 +470,9 @@ body {
 .footer ul li {
   padding: 0 10px;
   margin: 0;
-  width: 100%;
+}
+.footer ul li i {
+  padding: 0 10px;
 }
 @media screen and (max-width: 767.98px) {
   .footer ul li {
@@ -478,23 +480,26 @@ body {
     flex-direction: column;
     padding-bottom: 10px;
   }
+  .footer ul li i {
+    padding-right: 10px;
+    padding-left: 0px;
+  }
 }
-.footer ul li i {
-  padding-right: 10px;
-}
-.footer ul a {
+.footer a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: white;
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 20%;
 }
 @media screen and (max-width: 767.98px) {
-  .footer ul a {
+  .footer a {
     width: 100%;
-    padding-left: 10px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    justify-content: left;
   }
 }
 .footer .ohmyfood {

@@ -58,7 +58,7 @@ Body {
   height: 383px;
 }
 
-.menu__section {
+.menu__section__title {
   position: relative;
   top: -30px;
   flex-direction: column;
@@ -71,7 +71,7 @@ Body {
   background-color: #F6F6F6;
 }
 @media screen and (max-width: 1077px) and (min-width: 0px) {
-  .menu__section {
+  .menu__section__title {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -79,7 +79,7 @@ Body {
     margin: 0;
   }
 }
-.menu__section h1 {
+.menu__section__title h1 {
   display: flex;
   width: 100%;
   justify-content: right;
@@ -90,7 +90,7 @@ Body {
   padding: 15px;
 }
 @media screen and (max-width: 657px) and (min-width: 0px) {
-  .menu__section h1 {
+  .menu__section__title h1 {
     width: 100%;
     display: flex;
     justify-content: right;
@@ -100,7 +100,7 @@ Body {
     padding: 0;
   }
 }
-.menu__section .heart {
+.menu__section__title .heart {
   width: 70%;
   display: flex;
   justify-content: left;
@@ -109,8 +109,8 @@ Body {
   margin: 0;
 }
 @media screen and (max-width: 657px) and (min-width: 0px) {
-  .menu__section .heart {
-    width: 40%;
+  .menu__section__title .heart {
+    width: 50%;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -118,13 +118,13 @@ Body {
     margin: 0;
   }
 }
-.menu__section .heart i {
+.menu__section__title .heart i {
   font-size: 20px;
   padding: 0;
   margin: 0;
   color: #101010;
 }
-.menu__section .heart:hover i {
+.menu__section__title .heart:hover i {
   animation: fill 0.3s ease-in-out;
   display: inline-block;
   opacity: 1;
@@ -136,7 +136,7 @@ Body {
   font-weight: bold;
 }
 
-.menu__section__title {
+.menu__section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -146,7 +146,7 @@ Body {
   margin: 0;
 }
 @media screen and (max-width: 657px) {
-  .menu__section__title {
+  .menu__section {
     width: 100%;
     display: flex;
     flex-direction: column;

@@ -43,13 +43,12 @@ Body {
 
 .menu {
   width: 100%;
-  height: 383px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
   margin: 0;
-  flex-wrap: wrap;
 }
 .menu img {
   width: 100%;
@@ -262,336 +261,237 @@ Body {
   }
 }
 
-.Container {
+.container {
   cursor: pointer;
   width: 100%;
   height: 69px;
+  box-shadow: rgba(0, 0, 0, 0.1019607843) 0px 4px 15px 0px;
   display: flex;
-  align-items: center;
-  background-color: #fff;
+  overflow: hidden;
   border-radius: 15px;
-  padding: 10px 0 10px 10px;
-  margin: 0 0 15px 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  margin-bottom: 15px;
   animation-name: Container;
-  animation-timing-function: ease-in-out;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
+}
+.container .gauche {
+  padding: 10px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container .gauche h3 {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container .content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 5px 0px 5px 0px;
+}
+.container .content p {
+  font-family: "roboto", sans-serif;
+  font-size: 15.04px;
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container .content span {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "roboto", sans-serif;
+}
+.container .droite {
+  display: flex;
+  width: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.container .droite i {
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.container1 {
+  cursor: pointer;
+  width: 100%;
+  height: 69px;
+  box-shadow: rgba(0, 0, 0, 0.1019607843) 0px 4px 15px 0px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 15px;
+  padding: 0;
+  margin-bottom: 15px;
+  animation-name: Container1;
+  animation-duration: 2s;
+}
+.container1 .gauche {
+  padding: 10px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container1 .gauche h3 {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container1 .content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 5px 0px 5px 0px;
+}
+.container1 .content p {
+  font-family: "roboto", sans-serif;
+  font-size: 15.04px;
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container1 .content span {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "roboto", sans-serif;
+}
+.container1 .droite {
+  display: flex;
+  width: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.container1 .droite i {
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.container2 {
+  cursor: pointer;
+  width: 100%;
+  height: 69px;
+  box-shadow: rgba(0, 0, 0, 0.1019607843) 0px 4px 15px 0px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 15px;
+  padding: 0;
+  margin-bottom: 15px;
+  animation-name: Container2;
+  animation-duration: 3s;
+}
+.container2 .gauche {
+  padding: 10px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container2 .gauche h3 {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container2 .content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 5px 0px 5px 0px;
+}
+.container2 .content p {
+  font-family: "roboto", sans-serif;
+  font-size: 15.04px;
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.container2 .content span {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "roboto", sans-serif;
+}
+.container2 .droite {
+  display: flex;
+  width: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.container2 .droite i {
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.container:hover .droite {
+  width: 100px;
+  background-color: #99E2D0;
+}
+
+.container1:hover .droite {
+  width: 100px;
+  background-color: #99E2D0;
+}
+
+.container2:hover .droite {
+  width: 100px;
+  background-color: #99E2D0;
+}
+
+@keyframes Container2 {
+  from {
+    transform: matrix(1, 0, 0, 1, -800, 0);
+  }
+  35% {
+    transform: matrix(1, 0, 0, 1, 50, 0);
+  }
+  35% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+}
+@keyframes Container1 {
+  from {
+    transform: matrix(1, 0, 0, 1, -800, 0);
+  }
+  35% {
+    transform: matrix(1, 0, 0, 1, 50, 0);
+  }
+  35% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
 }
 @keyframes Container {
   from {
-    transform: perspective(600px) translate3d(0, -60px, -2000px) rotateY(75deg);
-    opacity: 0;
+    transform: matrix(1, 0, 0, 1, -800, 0);
   }
-  5% {
-    transform: perspective(600px) translate3d(0, -60px, -1500px) rotateY(75deg);
+  35% {
+    transform: matrix(1, 0, 0, 1, 50, 0);
+  }
+  35% {
+    transform: matrix(1, 0, 0, 1, 0, 0);
   }
 }
-.Container .plat {
-  width: 100%;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.Container .plat h2 {
-  width: 100%;
-  font-family: "roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 0;
-  margin: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.Container .plat .description {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-overflow: ellipsis;
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.Container .plat .description p {
-  width: 100%;
-  font-family: "roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  padding-top: 2px;
-  margin: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.Container .plat .description .prix {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-.Container .plat .description .prix p {
-  width: 100%;
-  font-weight: bold;
-  text-align: right;
-  padding-top: 2px;
-  padding: 0 15px 0 0;
-  margin: 0;
-}
-.Container .check {
-  width: 0;
-  height: 69px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  transform: scaleX(0);
-  transform-origin: right 100%;
-  transition: transform 0.5s ease-in-out;
-  transform: transform 0.5s ease-out;
-  margin: 0;
-  padding: 0;
-}
-.Container .check i {
-  width: 0;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  border-radius: 0 15px 15px 0;
-  color: whitesmoke;
-  transform: scaleX(0);
-  transform: transform 0.5s ease-out;
-}
-
-.Container1 {
-  cursor: pointer;
-  width: 100%;
-  height: 69px;
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 10px 0 10px 10px;
-  margin: 0 0 15px 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  animation-name: Container;
-  animation-timing-function: ease-in-out;
-  animation-duration: 1.9s;
-}
-.Container1 .plat {
-  width: 100%;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.Container1 .plat h2 {
-  width: 100%;
-  font-family: "roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 0;
-  margin: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.Container1 .plat .description {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-overflow: ellipsis;
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.Container1 .plat .description p {
-  width: 100%;
-  font-family: "roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  padding-top: 2px;
-  margin: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.Container1 .plat .description .prix {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-.Container1 .plat .description .prix p {
-  width: 100%;
-  font-weight: bold;
-  text-align: right;
-  padding-top: 2px;
-  padding: 0 15px 0 0;
-  margin: 0;
-}
-.Container1 .check {
-  width: 0;
-  height: 69px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  transform: scaleX(0);
-  transform-origin: right 100%;
-  transition: transform 0.5s ease-in-out;
-  transform: transform 0.5s ease-out;
-  margin: 0;
-  padding: 0;
-}
-.Container1 .check i {
-  width: 0;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  border-radius: 0 15px 15px 0;
-  color: whitesmoke;
-  transform: scaleX(0);
-  transform: transform 0.5s ease-out;
-}
-
-.Container1:hover .check i, .Container1:hover .check {
-  transform: scaleX(1);
-  width: 79px;
-}
-
-.Container2 {
-  cursor: pointer;
-  width: 100%;
-  height: 69px;
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 10px 0 10px 10px;
-  margin: 0 0 15px 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  animation-name: Container;
-  animation-timing-function: ease-in-out;
-  animation-duration: 2.5s;
-}
-.Container2 .plat {
-  width: 100%;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.Container2 .plat h2 {
-  width: 100%;
-  font-family: "roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 0;
-  margin: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.Container2 .plat .description {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-overflow: ellipsis;
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.Container2 .plat .description p {
-  width: 100%;
-  font-family: "roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  padding-top: 2px;
-  margin: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-.Container2 .plat .description .prix {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-.Container2 .plat .description .prix p {
-  width: 100%;
-  font-weight: bold;
-  text-align: right;
-  padding-top: 2px;
-  padding: 0 15px 0 0;
-  margin: 0;
-}
-.Container2 .check {
-  width: 0;
-  height: 69px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #99E2D0;
-  border-radius: 0 15px 15px 0;
-  transform: scaleX(0);
-  transform-origin: right 100%;
-  transition: transform 0.5s ease-in-out;
-  transform: transform 0.5s ease-out;
-  margin: 0;
-  padding: 0;
-}
-.Container2 .check i {
-  width: 0;
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  border-radius: 0 15px 15px 0;
-  color: whitesmoke;
-  transform: scaleX(0);
-  transform: transform 0.5s ease-out;
-}
-
-.Container2:hover .check i, .Container2:hover .check {
-  transform: scaleX(1);
-  width: 79px;
-}
-
-.Container:hover .check i, .Container:hover .check {
-  transform: scaleX(1);
-  width: 79px;
-}
-
 .button {
   width: 100%;
   height: 50px;
@@ -625,7 +525,7 @@ Body {
 }
 
 footer {
-  position: relative;
+  /*position: relative;*/
   width: 100%;
   height: 114px;
   display: flex;

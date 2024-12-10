@@ -341,6 +341,7 @@ body {
 @media screen and (max-width: 767.98px) {
   .restaurant-card {
     width: 100%;
+    padding: none;
     margin-top: 20px;
     margin-bottom: 0px;
   }
@@ -405,7 +406,7 @@ body {
 .restaurant-card .card-content .favorite-button i {
   font-size: 20px;
 }
-.restaurant-card .card-content :hover i {
+.restaurant-card .card-content .favorite-button:hover i {
   animation: fill 0.3s ease-in-out;
   display: inline-block;
   opacity: 1;
@@ -413,7 +414,6 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  cursor: pointer;
   font-weight: bold;
 }
 @keyframes fill {

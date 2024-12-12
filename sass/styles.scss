@@ -144,7 +144,7 @@ $color-quaternary: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   margin: 0;
   flex-wrap: wrap;
   button{
-    background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+    background:$color-quaternary;
     border: none;
     color: white;
     padding: 15px 32px;

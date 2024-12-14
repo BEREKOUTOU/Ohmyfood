@@ -339,13 +339,12 @@ $color-quaternary: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   margin-left: 15px;
   margin-top: 0px;
   margin-bottom: 0px;
-  
 }
-  @media screen and (max-width: 767.98px){
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 0px;  
-  }
+@media screen and (max-width: 767.98px){
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0px;  
+}
   
   .card-image {
     position: relative;

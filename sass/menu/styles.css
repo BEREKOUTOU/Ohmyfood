@@ -590,6 +590,15 @@ footer p {
   padding: 0 10px;
   margin: 0;
 }
+@media screen and (max-width: 767.98px) {
+  footer p {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+}
 footer a {
   display: flex;
   align-items: center;

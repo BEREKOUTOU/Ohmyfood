@@ -226,19 +226,23 @@ $color-quaternary: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
     margin-top: 10px;
    }
     button{
+      display: flex;
+      justify-content: left;
+      align-items: center;
       background: #F6F6F6;
       border: none;
       font-family: 'roboto', sans-serif;
       font-size: 16px;
       font-weight: 500;
-      margin: 15px 15px 15px 15px;
-      padding: 0;
+      margin: 15px ;
+      padding: 0px;
       width: 322.49px;
       height: 72.38px;
       border-radius: 20px;
       position: relative;
       @media screen and (max-width: 767.98px){
         width: 100%;
+        
         
       }
       
@@ -260,21 +264,19 @@ $color-quaternary: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
     }
     i{
       color: #7E7E7E;
-      padding-right: 20px;
+      padding: 30px;
       width: 20%;
-    
-      @media screen and (max-width: 768.98px){
-        padding-right: 2px;
+      @media screen and (min-width: 820px){
+        padding: 20px;
 
       }
-      @media screen and (max-width: 820.98px){
+      @media screen and (max-width: 767.98px){
         padding-right: 5px;
         
       }
     }
     .fa-store{
       color: $color-primary;
-      padding-right:20px ;
     }
    
   }
@@ -449,7 +451,7 @@ $color-quaternary: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 20px;
     margin: 0;
     background-color: #353535;
 
@@ -499,7 +501,7 @@ $color-quaternary: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
       }
         
     }
-    p{
+    div{
       display: flex;
       align-items: center;
       text-decoration: none;
@@ -532,6 +534,7 @@ $color-quaternary: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
       } 
     }
     .ohmyfood{
+      display: flex;
         color: white;
         font-family: 'Shrikhand', cursive;
         font-size: 18px;
@@ -539,7 +542,6 @@ $color-quaternary: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
         @media screen and (max-width: 767.98px){
           width: 100%;
           display: flex;
-          flex-direction: column;
           padding-left: 20px;
           margin-bottom: 30px;
           margin-top: 30px;

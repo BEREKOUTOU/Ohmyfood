@@ -228,13 +228,16 @@ body {
   }
 }
 .fonctionnement .fct button {
+  display: flex;
+  justify-content: left;
+  align-items: center;
   background: #F6F6F6;
   border: none;
   font-family: "roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  margin: 15px 15px 15px 15px;
-  padding: 0;
+  margin: 15px;
+  padding: 0px;
   width: 322.49px;
   height: 72.38px;
   border-radius: 20px;
@@ -260,22 +263,21 @@ body {
 }
 .fonctionnement .fct i {
   color: #7E7E7E;
-  padding-right: 20px;
+  padding: 30px;
   width: 20%;
 }
-@media screen and (max-width: 768.98px) {
+@media screen and (min-width: 820px) {
   .fonctionnement .fct i {
-    padding-right: 2px;
+    padding: 20px;
   }
 }
-@media screen and (max-width: 820.98px) {
+@media screen and (max-width: 767.98px) {
   .fonctionnement .fct i {
     padding-right: 5px;
   }
 }
 .fonctionnement .fct .fa-store {
   color: #9356DC;
-  padding-right: 20px;
 }
 .fonctionnement button:hover {
   opacity: 1;
@@ -445,7 +447,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding: 20px;
   margin: 0;
   background-color: #353535;
 }
@@ -496,7 +498,7 @@ body {
     padding-left: 0px;
   }
 }
-.footer p {
+.footer div {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -505,7 +507,7 @@ body {
   margin: 0;
 }
 @media screen and (max-width: 767.98px) {
-  .footer p {
+  .footer div {
     width: 100%;
     display: flex;
     justify-content: left;
@@ -531,6 +533,7 @@ body {
   }
 }
 .footer .ohmyfood {
+  display: flex;
   color: white;
   font-family: "Shrikhand", cursive;
   font-size: 18px;
@@ -540,7 +543,6 @@ body {
   .footer .ohmyfood {
     width: 100%;
     display: flex;
-    flex-direction: column;
     padding-left: 20px;
     margin-bottom: 30px;
     margin-top: 30px;

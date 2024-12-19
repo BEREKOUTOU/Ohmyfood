@@ -16,17 +16,17 @@
     <div class="div">
         <div id="loader" class="loader"></div> 
     </div>
-    <div id="main__content">
+    
         
 
-        <header class="header">
-            <img src="logo/ohmyfood.png" alt="logo ohmyfood">  
-        </header>
-        <div class="location">
-            <i class="fas fa-map-marker-alt"></i>
-            <p>Paris, Belleville</p>
-        </div>
-
+    <header class="header">
+        <img src="logo/ohmyfood.png" alt="logo ohmyfood">  
+    </header>
+    <div class="location">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Paris, Belleville</p>
+    </div>
+    <main>
         <div class="grand__titre">
             <div class="titre">
                 <h1>Réservez le menu qui vous convient</h1>
@@ -114,35 +114,15 @@
                 </div>
             </div>
         </section>
-
-        <footer class="footer">
-            <ul>
-                <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-            </ul>
-              <div>Mentions légales</div>
-            <a href="mailto:ZoQG3@example.com">Contact</a>
-            <div class="ohmyfood">ohmyfood</div>
-        </footer>
-    </div> 
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const loader = document.getElementById("loader");
-            const main = document.getElementById("main__content");
-
-        // Délai avant d'afficher le contenu
-        const DELAY = 2000;
-
-        // Afficher le contenu après le délai
-        setTimeout(() => {
-          // Cacher le loader
-          loader.style.display = "none";
-          
-          // Afficher le contenu
-          main.style.display = "block";
-        }, DELAY);
-      });
-    </script>
+    </main>
+    <footer class="footer">
+        <ul>
+            <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+            <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+        </ul>
+        <div>Mentions légales</div>
+        <a href="mailto:ZoQG3@example.com">Contact</a>
+        <div class="ohmyfood">ohmyfood</div>
+    </footer>
 </body>
 </html>

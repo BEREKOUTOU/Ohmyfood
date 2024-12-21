@@ -23,7 +23,7 @@ body {
   left: 0;
   background-color: #F6F6F6;
   animation: loader 3s forwards;
-  z-index: 1;
+  z-index: 9999;
 }
 
 @keyframes loader {
@@ -35,6 +35,7 @@ body {
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 .loader {

@@ -17,7 +17,7 @@
         <div id="loader" class="loader"></div> 
     </div>
     
-        
+<div id="main__content">
 
     <header class="header">
         <img src="logo/ohmyfood.png" alt="logo ohmyfood">  
@@ -124,5 +124,25 @@
         <a href="mailto:ZoQG3@example.com">Contact</a>
         <div class="ohmyfood">ohmyfood</div>
     </footer>
+
+</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const loader = document.getElementById("loader");
+            const main = document.getElementById("main__content");
+
+        // Délai avant d'afficher le contenu
+        const DELAY = 2000;
+
+        // Afficher le contenu après le délai
+        setTimeout(() => {
+          // Cacher le loader
+          loader.style.display = "none";
+          
+          // Afficher le contenu
+          main.style.display = "block";
+        }, DELAY);
+      });
+    </script>
 </body>
 </html>
